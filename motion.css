@@ -41,3 +41,7 @@ body[data-fx~=wipe] h2.rv.in{clip-path:inset(0 0 0 0);transform:none}
 
 /* ヒーローの5番目の要素 */
 .mo .hero .copy>*:nth-child(5){animation-delay:.75s}
+
+/* フッターの「一覧へ戻る」リンク */
+footer .back{margin-top:10px;font-size:12px}
+footer .back a{text-decoration:underline;text-underline-offset:3px}
