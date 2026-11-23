@@ -68,7 +68,7 @@
       var ease = 1 - Math.pow(1 - intro, 3);
       var p = Math.min(1, Math.max(0, y / heroH));
       if (y < heroH * 1.1 || intro < 1) {
-        var s = 1.07 + 0.06 * (1 - ease) + p * 0.04;
+        var s = 1.02 + 0.04 * (1 - ease) + p * 0.04;
         heroImg.style.transform = 'translate3d(0,' + (p * imgH * 0.03).toFixed(1) + 'px,0) scale(' + s.toFixed(4) + ')';
         if (copy && !m) {
           copy.style.opacity = Math.max(0, 1 - p * 1.5).toFixed(3);
@@ -87,7 +87,7 @@
       if (o.top + o.h < y - 120 || o.top > y + vh + 120) continue;
       var q = (o.top + o.h / 2 - y - vh / 2) / (vh / 2 + o.h / 2);
       q = q > 1 ? 1 : q < -1 ? -1 : q;
-      var sc = o.banner ? (m ? 1.12 : 1.2) : (m ? 1.06 : 1.1);
+      var sc = o.banner ? (m ? 1.1 : 1.14) : (m ? 1.05 : 1.08);
       var amp = (sc - 1) / 2 * 0.86;
       if (o.x && !m) o.i.style.transform = 'translate3d(' + (-q * amp * o.wd).toFixed(1) + 'px,0,0) scale(' + sc + ')';
       else o.i.style.transform = 'translate3d(0,' + (-q * amp * o.h).toFixed(1) + 'px,0) scale(' + sc + ')';
