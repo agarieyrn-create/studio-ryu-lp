@@ -126,6 +126,7 @@ footer{padding:36px 0 44px;font-size:12px;color:var(--mute)}
 </style>
 <link rel="stylesheet" href="motion.css">
 <link rel="preload" as="image" href="images/hero.webp">
+<link rel="stylesheet" href="extra.css">
 </head>
 <body data-fx="wipe">
 <header>
@@ -223,6 +224,17 @@ footer{padding:36px 0 44px;font-size:12px;color:var(--mute)}
     </div>
   </section>
 
+  <section class="x-sec x-demo x-ryu" data-demo="3500,6000,3000" data-bg="#f6f6f3" style="background-color:#f6f6f3">
+    <div class="wrap">
+      <p class="label">体験の60分</p>
+      <h2>60分の中身が、<br>ひと目でわかります。</h2>
+      <div class="x-grid">
+        <div class="x-stage"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="trk" cx="100" cy="100" r="86"/><circle class="run" cx="100" cy="100" r="86" pathLength="1"/><circle class="seg s1" cx="100" cy="100" r="86" pathLength="60"/><circle class="seg s2" cx="100" cy="100" r="86" pathLength="60"/></svg><div class="x-num" aria-hidden="true"><em data-count="60">60</em><span>分</span></div></div>
+        <div><div class="x-tabs" role="group" aria-label="表示を選ぶ"><button type="button" data-go="0" aria-pressed="false">カウンセリング</button><button type="button" data-go="1" aria-pressed="false">体験</button><button type="button" data-go="2" aria-pressed="false">ご案内</button></div><div class="x-panels"><div data-panel="0"><b>約15分　カウンセリング</b><p>目標や体の状態を伺います。体組成も測ります。</p></div><div data-panel="1"><b>約35分　体験トレーニング</b><p>無理のない内容で、実際に体を動かします。</p></div><div data-panel="2"><b>残りの時間　プランのご案内</b><p>ご希望の場合のみ、ご説明します。無理な勧誘はしません。</p></div></div><button type="button" class="x-play" data-play>動きを止める</button></div>
+      </div>
+    </div>
+  </section>
+
   <section id="price" data-bg="#f6f6f3">
     <div class="wrap">
       <p class="label">05　料金</p>
@@ -301,5 +313,6 @@ footer{padding:36px 0 44px;font-size:12px;color:var(--mute)}
 <nav class="bar" aria-label="お申し込み"><a class="main" href="#" data-link="line">無料体験を申し込む</a><a href="tel:0980000000">電話</a></nav>
 <script src="links.js" defer></script>
 <script src="motion.js" defer></script>
+<script src="extra.js" defer></script>
 </body>
 </html>
